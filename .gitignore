@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Ignore all files connected with Debug and other garbage
+cmake-build-debug
+*.idea
+*.txt
