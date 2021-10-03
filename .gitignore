@@ -31,7 +31,7 @@
 *.out
 *.app
 
-# Ignore all files connected with Debug and other garbage
+# Ignore all files connected with Debug and garbage
 cmake-build-debug
 *.idea
 *.txt
