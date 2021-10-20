@@ -12,22 +12,17 @@ int main(int argc, char* argv[])
 
     cin >> n >> k;
 
-    for (int i = 2; i <= n; ++i)
-    {
-        factn = factn * i;
-    }
-
     for (int i = 2; i <= k; ++i)
     {
         factk = factk * i;
     }
 
-    for (int i = 2; i <= (n - k); ++i)
+    for (int i = (n - k) + 1; i <= (n - 1); ++i)
     {
         factnk = factnk * i;
     }
 
-    cout << factn / (factk * factnk) << endl;
+    cout << n * factnk / (factk) << endl;
 
     return EXIT_SUCCESS;
 }

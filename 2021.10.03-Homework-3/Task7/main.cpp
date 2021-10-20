@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 
     for (int x = 0; x <= 1000; ++x)
     {
-        if ((a * x*x*x + b * x*x + c * x + d) == 0)
+        if ((a * x * x * x + b * x * x + c * x + d) == 0)
         {
             cout << x << " ";
         }
