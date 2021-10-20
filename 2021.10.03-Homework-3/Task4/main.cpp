@@ -6,7 +6,6 @@ int main(int argc, char* argv[])
 {
     int n = 0;
     int k = 0;
-    int factn = 1;
     int factk = 1;
     int factnk = 1;
 
