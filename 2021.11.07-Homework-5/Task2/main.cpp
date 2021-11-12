@@ -4,30 +4,26 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
+    double d = 0;
 
-    Not ready
+    cin >> d;
 
-    /* double a = 0;
+    unsigned long long* p = (unsigned long long*)&d;
+    unsigned long long number = *p;
 
-    cin >> a;
+    int size = sizeof(unsigned long long) * 8;
 
-    long long value = *((int*) &a);
-
-    for (int i = 0; i < sizeof(double) * 8; ++i)
+    for (int i = 1; i <= size; ++i)
     {
-        int currentBit = (sizeof(double) * 8 - 1 - i);
-        int bitMask = 1 << currentBit;
-        int bit = value & bitMask;
+        unsigned long long digit = (number & (1ll << (size - i))) >> (size - i);
 
-        bit = bit >> currentBit;
+        cout << digit;
 
-        cout << bit;
-
-        if((i + 1) % 4 == 0)
+        if (i % 4 == 0)
         {
             cout << " ";
         }
-    } */
+    }
 
     return EXIT_SUCCESS;
 }
