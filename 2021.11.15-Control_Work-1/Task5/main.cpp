@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
     int m = 0;
     int n = 0;
+
     cin >> m >> n;
 
     set<int> a = {};
@@ -15,14 +16,18 @@ int main(int argc, char *argv[])
     for (int i = 0; i < m; ++i)
     {
         int t;
+
         cin >> t;
+        
         a.insert(t);
     }
 
     for (int i = 0; i < n; ++i)
     {
         int t;
+
         cin >> t;
+
         b.insert(t);
     }
 
@@ -33,5 +38,6 @@ int main(int argc, char *argv[])
             cout << i << " ";
         }
     }
+
     return EXIT_SUCCESS;
 }
