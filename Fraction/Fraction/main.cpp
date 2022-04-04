@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     Fraction fr1(3, 1);
+
     Fraction fr2(5, -2);
 
     cout << fr1 * fr2 << endl;

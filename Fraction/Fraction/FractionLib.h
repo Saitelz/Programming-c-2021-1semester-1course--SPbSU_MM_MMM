@@ -53,7 +53,5 @@ public:
     friend Fraction operator/(const Fraction& a, long long b);
 
     friend std::ostream& operator<<(std::ostream& stream, const Fraction& fraction);
-
-
 };
 

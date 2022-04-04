@@ -4,11 +4,14 @@
 
 
 Fraction::Fraction() :numerator(0), denominator(1) {}
+
 Fraction::Fraction(long long numerator, long long denominator) :numerator(numerator), denominator(denominator)
 {
     this->normalize();
 }
+
 Fraction::Fraction(const Fraction& fraction) :numerator(fraction.numerator), denominator(fraction.denominator) {}
+
 Fraction::~Fraction()
 {
     this->numerator = 0;
