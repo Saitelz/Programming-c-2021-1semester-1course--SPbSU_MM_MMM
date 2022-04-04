@@ -48,7 +48,7 @@ public:
     friend Fraction operator*(const Fraction& a, long long b);
     friend Fraction operator*(long long a, const Fraction& b);
 
-    friend Fraction operator/(const Fraction& a, const Fraction& b);
+    friend Fraction operator/(const Fraction& a, Fraction& b);
     friend Fraction operator/(long long a, const Fraction& b);
     friend Fraction operator/(const Fraction& a, long long b);
 
